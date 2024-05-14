@@ -14,7 +14,7 @@ interface ProjectBoxProps {
 
 const ProjectBox: React.FC<ProjectBoxProps> = ({ project }) => {
   const textBox = (
-    <div className='bg-slate-950 rounded-lg p-4 mx-4'>
+    <div className='bg-slate-950 rounded-lg p-4 m-4'>
       <a href={`https://github.com/sheaDurgin/${project.githubLink}`} target="_blank" rel="noopener noreferrer" 
           className="block rounded-lg hover:bg-slate-900 transition-colors duration-300 p-4"
       >

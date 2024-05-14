@@ -18,13 +18,11 @@ export default function Home() {
   return (
     <div className='max-w-7xl mx-auto pb-12 grid grid-cols-1 lg:grid-cols-2'>
       <div className='grid-span-1 mb-4'>
-        {/* <h2 className="text-2xl font-semibold mb-4 text-center">Projects</h2> */}
           {projects.map((project, index) => (
             <ProjectBox key={index} project={project} />
           ))}
       </div>
       <div className='grid-span-1'>
-        {/* <h2 className="text-2xl font-semibold mb-4 text-center">Publications</h2> */}
           {papers.map((paper, index) => (
             <PaperPox key={index} paper={paper} />
           ))}
