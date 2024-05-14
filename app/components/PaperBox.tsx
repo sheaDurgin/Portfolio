@@ -15,7 +15,7 @@ interface PaperBoxProps {
 
 const PaperBox: React.FC<PaperBoxProps> = ({ paper }) => {
   return (
-    <div className='bg-slate-950 rounded-lg p-4 mb-4 m-4'>
+    <div className='bg-slate-950 rounded-lg p-4 mx-4 mb-4'>
         <a href={paper.route} target="_blank" rel="noopener noreferrer" 
           className="block rounded-lg hover:bg-slate-900 transition-colors duration-300 p-4"
         >
