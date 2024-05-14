@@ -26,7 +26,7 @@ const Navbar = () => {
                 <a href="/" className='text-white hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                   Home
                 </a>
-                <a href="/resume.pdf" target='_blank' className='text-white hover:bg-slate-900 hover:text-white rounded-lg p-2'>
+                <a href="/resume.pdf" target='_blank' rel="noopener noreferrer" className='text-white hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                   Resume
                 </a>
                 <a href="/contact" className='text-white hover:bg-slate-900 hover:text-white rounded-lg p-2'>
