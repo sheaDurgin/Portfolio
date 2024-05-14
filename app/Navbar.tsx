@@ -10,18 +10,18 @@ const Navbar = () => {
   }
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <nav className='bg-slate-950 rounded-lg px-6 m-4'>
           <div className='flex items-center justify-between h-16 px-2'>
             <div className='flex items-center'>
               <div className='flex-shrink-0'>
-                <a href="/" className='text-white'>
+                <a href="/" className='text-white text-xl'>
                   Shea Durgin
                 </a>
               </div>
             </div>
             <div className='hidden md:block'>
-              <div className='ml-4 flex items-center space-x-4'>
+              <div className='ml-4 flex items-center space-x-4 text-lg'>
                 <a href="/" className='text-white hover:bg-purple-600 hover:text-black rounded-lg p-2'>
                   Home
                 </a>
@@ -79,7 +79,7 @@ const Navbar = () => {
           </div>
           {isClick && (
             <div className='md:hidden'>
-              <div className='py-2 space-y-1'>
+              <div className='py-2 space-y-1 text-lg'>
                   <a href="/" className='text-white block hover:bg-purple-600 hover:text-black rounded-lg p-2'>
                     Home
                   </a>
