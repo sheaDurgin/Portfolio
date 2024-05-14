@@ -13,15 +13,13 @@ const Navbar = () => {
     <div className="max-w-7xl mx-auto">
       <nav className='bg-slate-950 rounded-lg px-6 m-4'>
           <div className='flex items-center justify-between h-16 px-2'>
-            <div className='flex items-center'>
-              <div className='flex-shrink-0'>
-                <a href="/" className='text-white text-xl pr-4'>
-                  Shea Durgin
-                </a>
-                <a href="/" className='text-gray-500 text-sm'>
-                  Software Engineer in Portland, ME
-                </a>
-              </div>
+            <div className='flex flex-col'>
+              <a href="/" className='text-white text-xl pr-4'>
+                Shea Durgin
+              </a>
+              <a href="/" className='text-gray-500 text-sm'>
+                Software Engineer in Portland, ME
+              </a>
             </div>
             <div className='hidden md:block'>
               <div className='ml-4 flex items-center space-x-4 text-lg'>
@@ -38,7 +36,7 @@ const Navbar = () => {
             </div>
             <div className='md:hidden flex items-center'>
               <button className='inline-flex items-center justify-center rounded-md text-white md:text-white 
-              hover:text-slate-900 focus:outline-none'
+              hover:text-purple-600 focus:outline-none'
               onClick={toggleNavbar}>
                 {isClick ? (
                   <svg 

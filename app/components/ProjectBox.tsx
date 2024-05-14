@@ -45,18 +45,8 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({ project, index }) => {
 
 
   return (
-    <div className='flex items-center'>
-      {isEven ? (
-        <>
-          {textBox}
-          {media}
-        </>
-      ) : (
-        <>
-          {media}
-          {textBox}
-        </>
-      )}
+    <div className='flex flex-col lg:flex-row items-center'>
+      {textBox}{media} 
     </div>
   );
 };
