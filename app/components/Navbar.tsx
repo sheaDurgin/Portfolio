@@ -78,10 +78,10 @@ const Navbar = () => {
                   <a href="/" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                     Home
                   </a>
-                  <a href="/resume" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
+                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                     Resume
                   </a>
-                  <a href="/contact" target="_blank" rel="noopener noreferrer" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
+                  <a href="/contact" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                     Contact
                   </a>
               </div>
