@@ -16,7 +16,7 @@ export default function Home() {
           Bachelor of Science in Computer Science
         </p>
         <p className="text-white">
-          University of Southern Maine '24   
+          University of Southern Maine &apos;24
         </p>
       </div>
     </div>
