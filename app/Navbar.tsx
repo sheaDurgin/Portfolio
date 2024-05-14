@@ -15,33 +15,30 @@ const Navbar = () => {
           <div className='flex items-center justify-between h-16 px-2'>
             <div className='flex items-center'>
               <div className='flex-shrink-0'>
-                <a href="/" className='text-white text-xl'>
+                <a href="/" className='text-white text-xl pr-4'>
                   Shea Durgin
+                </a>
+                <a href="/" className='text-gray-500 text-sm'>
+                  Software Engineer in Portland, ME
                 </a>
               </div>
             </div>
             <div className='hidden md:block'>
               <div className='ml-4 flex items-center space-x-4 text-lg'>
-                <a href="/" className='text-white hover:bg-purple-600 hover:text-black rounded-lg p-2'>
+                <a href="/" className='text-white hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                   Home
                 </a>
-                <a href="/projects" className='text-white hover:bg-purple-600 hover:text-black rounded-lg p-2'>
-                  Projects
-                </a>
-                <a href="/work" className='text-white hover:bg-purple-600 hover:text-black rounded-lg p-2'>
-                  Work
-                </a>
-                <a href="/resume.pdf" target='_blank' className='text-white hover:bg-purple-600 hover:text-black rounded-lg p-2'>
+                <a href="/resume.pdf" target='_blank' className='text-white hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                   Resume
                 </a>
-                <a href="/contact" className='text-white hover:bg-purple-600 hover:text-black rounded-lg p-2'>
+                <a href="/contact" className='text-white hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                   Contact
                 </a>
               </div>
             </div>
             <div className='md:hidden flex items-center'>
               <button className='inline-flex items-center justify-center rounded-md text-white md:text-white 
-              hover:text-purple-600 focus:outline-none'
+              hover:text-slate-900 focus:outline-none'
               onClick={toggleNavbar}>
                 {isClick ? (
                   <svg 
@@ -80,19 +77,13 @@ const Navbar = () => {
           {isClick && (
             <div className='md:hidden'>
               <div className='py-2 space-y-1 text-lg'>
-                  <a href="/" className='text-white block hover:bg-purple-600 hover:text-black rounded-lg p-2'>
+                  <a href="/" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                     Home
                   </a>
-                  <a href="/projects" className='text-white block hover:bg-purple-600 hover:text-black rounded-lg p-2'>
-                    Projects
-                  </a>
-                  <a href="/work" className='text-white block hover:bg-purple-600 hover:text-black rounded-lg p-2'>
-                    Work
-                  </a>
-                  <a href="/resume" className='text-white block hover:bg-purple-600 hover:text-black rounded-lg p-2'>
+                  <a href="/resume" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                     Resume
                   </a>
-                  <a href="/contact" className='text-white block hover:bg-purple-600 hover:text-black rounded-lg p-2'>
+                  <a href="/contact" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
                     Contact
                   </a>
               </div>
