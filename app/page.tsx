@@ -20,7 +20,7 @@ export default function Home() {
       <div className='grid-span-1 mb-4'>
         {/* <h2 className="text-2xl font-semibold mb-4 text-center">Projects</h2> */}
           {projects.map((project, index) => (
-            <ProjectBox key={index} project={project} index={index} />
+            <ProjectBox key={index} project={project} />
           ))}
       </div>
       <div className='grid-span-1'>

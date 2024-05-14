@@ -10,12 +10,9 @@ interface Project {
 
 interface ProjectBoxProps {
   project: Project;
-  index: number;
 }
 
-const ProjectBox: React.FC<ProjectBoxProps> = ({ project, index }) => {
-  const isEven = index % 2 === 0;
-
+const ProjectBox: React.FC<ProjectBoxProps> = ({ project }) => {
   const textBox = (
     <div className='bg-slate-950 rounded-lg p-4 mx-4'>
       <a href={`https://github.com/sheaDurgin/${project.githubLink}`} target="_blank" rel="noopener noreferrer" 
