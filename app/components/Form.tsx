@@ -9,6 +9,7 @@ type FormValues = {
   name: string;
   email: string;
   message: string;
+  note: string;
 };
 
 const ContactForm = () => {
@@ -26,6 +27,9 @@ const ContactForm = () => {
     }
   ) => {
     try {
+      if (values.note) {
+        return;
+      }
       setIsLoading(true);
       // Send email using Nodemailer
       await fetch("/api/contact", {
@@ -57,7 +61,7 @@ const ContactForm = () => {
         Contact Me!
       </h4>
       <Formik
-        initialValues={{ name: "", email: "", message: "" }}
+        initialValues={{ name: "", email: "", message: "", note: "" }}
         validationSchema={toFormikValidationSchema(validationSchema)}
         onSubmit={handleSubmit}
       >
@@ -126,6 +130,7 @@ const ContactForm = () => {
                   Submit
                 </button>
               </div>
+              <Field type="text" name="note" style={{ display: "none" }} aria-hidden="true" />
             </div>
           </div>
         </Form>
