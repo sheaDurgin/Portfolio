@@ -57,9 +57,6 @@ const ContactForm = () => {
 
   return (
     <div className="flex flex-col items-center">
-      {/* <h4 className="text-white text-3xl font-bold mb-4">
-        Contact Me!
-      </h4> */}
       <Formik
         initialValues={{ name: "", email: "", message: "", note: "" }}
         validationSchema={toFormikValidationSchema(validationSchema)}
@@ -77,7 +74,7 @@ const ContactForm = () => {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-slate-950 bg-opacity-50 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-slate-950 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                   <ErrorMessage
                     name="name"
@@ -95,7 +92,7 @@ const ContactForm = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full bg-slate-950 bg-opacity-50 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-slate-950 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                   <ErrorMessage
                     name="email"
@@ -113,7 +110,7 @@ const ContactForm = () => {
                     id="message"
                     name="message"
                     as="textarea"
-                    className="w-full bg-slate-950 bg-opacity-50 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-slate-950 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   />
                   <ErrorMessage
                     name="message"
