@@ -70,7 +70,7 @@ const ContactForm = () => {
             <div className="flex flex-wrap">
               <div className="p-2 w-full sm:w-1/2">
                 <div className="relative text-center">
-                  <label className="leading-7 text-sm text-white">
+                  <label className="leading-7 text-xl text-white">
                     Name
                   </label>
                   <Field
@@ -88,7 +88,7 @@ const ContactForm = () => {
               </div>
               <div className="p-2 w-full sm:w-1/2">
                 <div className="relative text-center">
-                  <label className="leading-7 text-sm text-white">
+                  <label className="leading-7 text-xl text-white">
                     Email
                   </label>
                   <Field
@@ -106,7 +106,7 @@ const ContactForm = () => {
               </div>
               <div className="p-2 w-full">
                 <div className="relative text-center">
-                  <label className="leading-7 text-sm text-white">
+                  <label className="leading-7 text-xl text-white">
                     Message
                   </label>
                   <Field
