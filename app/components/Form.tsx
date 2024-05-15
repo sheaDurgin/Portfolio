@@ -57,9 +57,9 @@ const ContactForm = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <h4 className="text-white text-3xl font-bold mb-4">
+      {/* <h4 className="text-white text-3xl font-bold mb-4">
         Contact Me!
-      </h4>
+      </h4> */}
       <Formik
         initialValues={{ name: "", email: "", message: "", note: "" }}
         validationSchema={toFormikValidationSchema(validationSchema)}
@@ -69,15 +69,15 @@ const ContactForm = () => {
           <div className="w-full mx-auto">
             <div className="flex flex-wrap">
               <div className="p-2 w-full sm:w-1/2">
-                <div className="relative">
-                  <label className="leading-7 text-sm text-gray-600">
+                <div className="relative text-center">
+                  <label className="leading-7 text-sm text-white">
                     Name
                   </label>
                   <Field
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-600 focus:bg-white focus:ring-2 focus:ring-purple-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-slate-950 bg-opacity-50 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                   <ErrorMessage
                     name="name"
@@ -87,15 +87,15 @@ const ContactForm = () => {
                 </div>
               </div>
               <div className="p-2 w-full sm:w-1/2">
-                <div className="relative">
-                  <label className="leading-7 text-sm text-gray-600">
+                <div className="relative text-center">
+                  <label className="leading-7 text-sm text-white">
                     Email
                   </label>
                   <Field
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-600 focus:bg-white focus:ring-2 focus:ring-purple-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-slate-950 bg-opacity-50 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                   <ErrorMessage
                     name="email"
@@ -105,15 +105,15 @@ const ContactForm = () => {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <div className="relative">
-                  <label className="leading-7 text-sm text-gray-600">
+                <div className="relative text-center">
+                  <label className="leading-7 text-sm text-white">
                     Message
                   </label>
                   <Field
                     id="message"
                     name="message"
                     as="textarea"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-purple-600 focus:bg-white focus:ring-2 focus:ring-purple-600 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-slate-950 bg-opacity-50 rounded border border-slate-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-600 h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   />
                   <ErrorMessage
                     name="message"
