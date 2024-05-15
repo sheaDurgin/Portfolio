@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectBox from './components/ProjectBox';
-import PaperPox from './components/PaperBox'
+import PaperBox from './components/PaperBox'
 
 const projects = [
   { name: 'Recipe Roots', body: 'Recipe Roots is a family cookbook that fits in your pocket. It holds records of your relatives recipes while properly attributing them as authors. You are able to construct your family tree to properly showcase your Recipe Roots.', githubLink: 'RecipeRootsApp', imageSrc: 'reciperoots.png' },
@@ -26,7 +26,7 @@ export default function Home() {
       <div className='grid-span-1'>
       <h2 className="text-2xl font-semibold mb-4 text-center">Publications</h2>
           {papers.map((paper, index) => (
-            <PaperPox key={index} paper={paper} />
+            <PaperBox key={index} paper={paper} />
           ))}
       </div>
     </div>
