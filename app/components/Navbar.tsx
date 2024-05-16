@@ -1,17 +1,24 @@
 "use client"
-import React from 'react'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Navbar = () => {
   const [isClick, setIsClick] = useState(false)
+  const [isMoving, setIsMoving] = useState(false);
 
   const toggleNavbar = () => {
     setIsClick(!isClick)
   }
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsMoving(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="max-w-7xl mx-auto">
-      <nav className='bg-slate-950 rounded-lg px-6 m-4'>
+      <nav className={`bg-slate-950 rounded-lg px-6 m-4 transition-all duration-500 ${isMoving ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}>
           <div className='flex items-center justify-between h-16 px-2'>
             <div className='flex flex-col'>
               <a href="/" className='text-white text-xl pr-4'>
@@ -74,17 +81,17 @@ const Navbar = () => {
           </div>
           {isClick && (
             <div className='md:hidden'>
-              <div className='py-2 space-y-1 text-lg'>
-                  <a href="/" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
-                    Home
-                  </a>
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
-                    Resume
-                  </a>
-                  <a href="/contact" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
-                    Contact
-                  </a>
-              </div>
+                <div className='py-2 space-y-1 text-lg'>
+                    <a href="/" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
+                      Home
+                    </a>
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
+                      Resume
+                    </a>
+                    <a href="/contact" className='text-white block hover:bg-slate-900 hover:text-white rounded-lg p-2'>
+                      Contact
+                    </a>
+                </div>
             </div>
           )}
       </nav>
