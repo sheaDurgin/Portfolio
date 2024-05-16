@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { validationSchema } from "@/utils/validations";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -15,6 +15,14 @@ type FormValues = {
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSent, setIsSent] = useState(false)
+  const [isMoving, setIsMoving] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsMoving(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleSubmit = async (
     values: FormValues,
@@ -63,7 +71,8 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
       >
         <Form>
-          <div className="w-full mx-auto">
+        
+          <div className={`w-full mx-auto transition-all duration-500 ${isMoving ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}`}>
             <div className="flex flex-wrap">
               <div className="p-2 w-full sm:w-1/2">
                 <div className="relative text-center">
